@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/374bf5c78c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+        <script src="./chat.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/72/72439.png"/>
+        <title>#DARKCHAT</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <span style="display: inline; max-height:20px; padding-bottom: 40px;">
+                <center><h1 class="title" >#DARK CHAT</h1></center>
+            </span>
+            <div id="chat-container">
+            </div>
+            <div class="input-container">
+                <textarea id="chat-text" type="text" placeholder="Message #general"></textarea>
+                <button id="send">
+                    <img style="width: 20px; height: auto;" src="./assets/send.png" alt="send-icon"/>
+                </button>
+            </div>
+            <span class="usr-typing">
+                <p class="typing"></p>
+            </span>
+        </div>
+    </body>
+</html>
