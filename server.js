@@ -18,6 +18,8 @@ const usrMap = new Map();
 
 const queueArray = new Array();
 
+const PORT = process.env.port || 3000;
+
 
 io.on('connection', (socket) => {
 
@@ -76,6 +78,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "public", "chat.html"));
 });
 
-server.listen('3000', () => {
+server.listen(PORT, () => {
     console.log("The express app is listening on 3000!");
 });
