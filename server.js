@@ -77,5 +77,5 @@ app.get('/', (req, res) => {
 });
 
 server.listen(process.env.PORT || 3000, () => {
-    console.log(`The express app is listening on ${PORT }`);
+    console.log(`The express app is listening on ${process.env.PORT || 3000}`);
 });
